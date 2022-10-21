@@ -3,7 +3,6 @@ package jasjeet.singh.drawingapp
 import android.Manifest
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -24,7 +23,6 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.content.PermissionChecker.PermissionResult
 import androidx.core.view.get
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.imageview.ShapeableImageView
@@ -36,7 +34,6 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
-import java.security.Permission
 
 
 class MainActivity : AppCompatActivity() {
