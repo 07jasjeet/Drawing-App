@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvBrushSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/select_brush_size"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/ib_largeBrush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_largeBrush"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btnBackground"
+        android:src="@drawable/large"
+        app:layout_constraintBottom_toTopOf="@id/ib_mediumBrush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBrushSize"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_mediumBrush"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btnBackground"
+        android:src="@drawable/medium"
+        app:layout_constraintTop_toBottomOf="@+id/ib_largeBrush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ib_smallBrush"
+        />
+
+
+    <ImageButton
+        android:id="@+id/ib_smallBrush"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btnBackground"
+        android:src="@drawable/small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_mediumBrush"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginBottom="10dp"
+        />
+    <!--Bottom margin added for symmetry.-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Drawing App</string>
+    <string name="select_brush_size">Select Size</string>
+</resources>
